@@ -12,4 +12,7 @@
 <body>
 	<header>
 		<h1><?php echo get_bloginfo( 'name' ); ?></h1>
+		<div class="nav">
+			<?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+		</div>
 	</header>
