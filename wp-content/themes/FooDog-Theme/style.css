@@ -1,0 +1,19 @@
+/*
+Theme Name: FooDog
+Author: Becode Team Turing 2.6
+Description: Theme for the FooDog site
+Version: 0.0.1
+Tags: FooDog
+*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crimson Text", serif; }
+
+div, p, span, a, input, label {
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
