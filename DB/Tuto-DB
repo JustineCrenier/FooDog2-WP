@@ -1,0 +1,5 @@
+Rajouter
+USE foodog2;
+
+Au dessus de chaque CREATE TABLE
+DROP TABLE IF EXISTS `nom_de_la_table`;
