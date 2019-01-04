@@ -1,0 +1,35 @@
+header{
+	.site-title{
+		h1{
+			font-size: 3em;
+			font-weight: bold;
+			padding: 1em 0;
+		}
+	}
+	.nav{
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid lightgrey;
+		div{
+			width: 100%;
+			.menu-header-container{
+				.menu{
+					display: flex;
+					justify-content: center;
+					list-style: none;
+					li{
+						margin: 0 1.5em;
+						a{
+							text-transform: uppercase;
+							color: black;
+
+							&:hover{
+								text-decoration: none;
+								color: $color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

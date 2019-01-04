@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>q
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -11,8 +11,14 @@
 </head>
 <body>
 	<header>
-		<h1><?php echo get_bloginfo( 'name' ); ?></h1>
-		<div class="nav">
-			<?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+		<div class="site-title container">
+			<div class="row d-flex justify-content-center">
+				<h1><?php echo get_bloginfo( 'name' ); ?></h1>
+			</div>
+		</div>
+		<div class="nav container">
+			<div class="row d-flex justify-content-center">
+				<?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+			</div>
 		</div>
 	</header>

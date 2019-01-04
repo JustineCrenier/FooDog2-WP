@@ -17,3 +17,30 @@ div, p, span, a, input, label {
 
 a {
   text-decoration: none; }
+
+header .site-title h1 {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 1em 0; }
+
+header .nav {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid lightgrey; }
+  header .nav div {
+    width: 100%; }
+    header .nav div .menu-header-container .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      list-style: none; }
+      header .nav div .menu-header-container .menu li {
+        margin: 0 1.5em; }
+        header .nav div .menu-header-container .menu li a {
+          text-transform: uppercase;
+          color: black; }
+          header .nav div .menu-header-container .menu li a:hover {
+            text-decoration: none;
+            color: #ff8d6a; }
