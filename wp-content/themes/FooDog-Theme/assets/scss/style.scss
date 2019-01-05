@@ -23,7 +23,7 @@ a{
 	text-decoration: none;
 }
 
-h2{
+h2.accueil{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.3em;
@@ -69,3 +69,6 @@ h4{
 }
 @import 'featured-post';
 @import 'latest-post';
+
+//CATEGORY
+@import 'category';

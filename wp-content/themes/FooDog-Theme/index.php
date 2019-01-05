@@ -1,19 +1,21 @@
 <?php get_header(); ?>
-	<!-- content -->
+	<!-- content index -->
+	<!-- Hero section -->
 	<div class="container">
 		<div class="row">
 			<div class="col-8 wrapper-content">
 				<!-- Featured post -->
 				<div class="container featured-post">
 					<div class="row">
-						<h2 class="col-12">
+						<h2 class="col-12 accueil">
 							Featured Post
 						</h2>
 					</div>
 					<div class="row">
 						<?php
 							$args = array(
-    							'tag' => 'featured'
+    							'tag' => 'featured',
+    							'posts_per_page' => 3
 							);
 							$query = new WP_Query( $args );
 						?>
@@ -36,7 +38,7 @@
 				<!-- Latest Post -->
 				<div class="container latest-post">
 					<div class="row">
-						<h2 class="col-12">
+						<h2 class="col-12 accueil">
 							Latest Post
 						</h2>
 					</div>

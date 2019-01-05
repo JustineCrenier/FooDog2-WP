@@ -18,13 +18,13 @@ h2, h3, h4, div, span, a, input, label {
 a {
   text-decoration: none; }
 
-h2 {
+h2.accueil {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.3em;
   position: relative;
   margin: 2em 0; }
-  h2:after {
+  h2.accueil:after {
     content: '';
     position: absolute;
     border-bottom: 2px solid lightgrey;
@@ -115,3 +115,45 @@ header .nav {
         font-size: 0.7em; }
   .latest-post div div div div p {
     text-align: center; }
+
+.cat-header {
+  background-color: lightgrey;
+  margin: 15px 0 45px 0;
+  padding: 1.5em 0; }
+  .cat-header h2 {
+    padding: 0;
+    margin: 0; }
+    .cat-header h2 ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .cat-header h2 ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .cat-header h2 ul li a {
+          text-transform: uppercase;
+          color: black;
+          font-size: 0.7em; }
+
+.cat-content div div img {
+  width: 350px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.cat-content div div h4 {
+  text-transform: uppercase;
+  color: #ff8d6a;
+  font-size: 1em;
+  font-weight: bold; }
+  .cat-content div div h4 span {
+    color: black; }
+  .cat-content div div h4 ul {
+    margin: 0 10px; }
+
+.cat-content div div h3 {
+  margin-top: 1em; }
