@@ -1,0 +1,12 @@
+.footer{
+	margin-top: 1.5em;
+	.main-footer, .social{
+		padding: 1em 0;
+	}
+	.main-footer{
+		background-color: $footerTop;
+	}
+	.social{
+		background-color: $footerBottom;
+	}
+}

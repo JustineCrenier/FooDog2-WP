@@ -157,3 +157,12 @@ header .nav {
 
 .cat-content div div h3 {
   margin-top: 1em; }
+
+.footer {
+  margin-top: 1.5em; }
+  .footer .main-footer, .footer .social {
+    padding: 1em 0; }
+  .footer .main-footer {
+    background-color: #3a3e43; }
+  .footer .social {
+    background-color: #303336; }
