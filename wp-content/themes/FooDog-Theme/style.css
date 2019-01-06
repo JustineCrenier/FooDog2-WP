@@ -45,6 +45,12 @@ h4 ul {
     color: #ff8d6a;
     font-weight: bold; }
 
+.link-title, .h1-title {
+  color: black; }
+  .link-title:hover, .h1-title:hover {
+    color: #ff8d6a;
+    text-decoration: none; }
+
 header .site-title h1 {
   font-size: 3em;
   font-weight: bold;

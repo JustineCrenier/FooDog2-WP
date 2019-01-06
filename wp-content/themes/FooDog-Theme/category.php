@@ -15,7 +15,7 @@
 							</div>
 							<div class="col-6">
 								<h4 class="d-flex"><?php the_category(); ?> <span>|</span></h4>
-								<h3><?php the_title(); ?></h3>
+								<a href="<?php the_permalink(); ?>" class="link-title"><h3><?php the_title(); ?></h3></a>
 								<p><?php the_excerpt(); ?></p>
 							</div>
 						</div>

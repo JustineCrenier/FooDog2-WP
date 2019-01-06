@@ -59,7 +59,13 @@ h4{
 		}
 	}
 }
-
+.link-title, .h1-title{
+	color: black;
+	&:hover{
+		color:$color;
+		text-decoration: none;
+	}
+}
 //HEADER
 @import 'header';
 
