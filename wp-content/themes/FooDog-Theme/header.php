@@ -13,7 +13,7 @@
 	<header>
 		<div class="site-title container">
 			<div class="row d-flex justify-content-center">
-				<h1><?php echo get_bloginfo( 'name' ); ?></h1>
+				<a href="<?php bloginfo( 'url' ); ?>" class="h1-title"><h1><?php echo get_bloginfo( 'name' ); ?></h1></a>
 			</div>
 		</div>
 		<div class="nav container">

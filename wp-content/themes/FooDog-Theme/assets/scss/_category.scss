@@ -1,0 +1,53 @@
+.cat-header{
+	background-color: lightgrey;
+	margin: 15px 0 45px 0;
+	padding: 1.5em 0;
+
+	h2{
+		padding: 0;
+		margin: 0;
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				display: flex;
+				justify-content: center;
+				a{
+					text-transform: uppercase;
+					color: black;
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+}
+
+.cat-content{
+	div{
+		div{
+			img{
+				width: 350px;
+				height: 250px;
+				object-fit: cover;
+			}
+			h4{
+				text-transform: uppercase;
+				color: $color;
+				font-size: 1em;
+				font-weight: bold;
+
+				span{
+					color: black;
+				}
+
+				ul{
+					margin: 0 10px;
+				}
+			}
+			h3{
+				margin-top: 1em;
+			}
+		}
+	}
+}
