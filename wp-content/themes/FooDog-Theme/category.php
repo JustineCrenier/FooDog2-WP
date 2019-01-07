@@ -25,6 +25,8 @@
 		</div>
 		<div class="col-4">
 			<!-- sidebar -->
+			<?php get_sidebar(); ?>
+
 		</div>
 	</div>
 </div>

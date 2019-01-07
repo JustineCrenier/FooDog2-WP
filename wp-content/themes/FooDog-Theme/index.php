@@ -97,7 +97,7 @@
 				</div>
 			</div>
 			<div class="col-4">
-				<!-- Mettre la sidebar ici -->
+				<?php get_sidebar(); ?>
 			</div>
 		</div>
 	</div>

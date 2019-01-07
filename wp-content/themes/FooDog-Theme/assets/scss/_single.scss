@@ -1,0 +1,36 @@
+.single-post{
+	margin-top: 2em;
+	div{
+		div{
+			div{
+				div{
+					ul{
+						list-style: none;
+						padding: 0;
+						margin: 0 0 1em 0;
+						li{
+							a{
+								text-transform: uppercase;
+								color: $color;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+				h2{
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 1.5em;
+					margin-bottom: 1em;
+				}
+				div{
+					img{
+						width: 520px;
+						height: 320px;
+						object-fit: cover;
+					}	
+				}
+			}
+		}
+	}
+}

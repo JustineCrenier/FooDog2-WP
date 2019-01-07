@@ -143,6 +143,9 @@ header .nav {
   .latest-post div div div div p {
     text-align: center; }
 
+.sidebar {
+  margin-top: 3em; }
+
 .cat-header {
   background-color: lightgrey;
   margin: 15px 0 45px 0;
@@ -184,6 +187,27 @@ header .nav {
 
 .cat-content div div h3 {
   margin-top: 1em; }
+
+.single-post {
+  margin-top: 2em; }
+  .single-post div div div div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em 0; }
+    .single-post div div div div ul li a {
+      text-transform: uppercase;
+      color: #ff8d6a;
+      font-weight: bold; }
+  .single-post div div div h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em; }
+  .single-post div div div div img {
+    width: 520px;
+    height: 320px;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 .footer {
   margin-top: 1.5em; }
