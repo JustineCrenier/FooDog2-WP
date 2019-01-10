@@ -66,5 +66,31 @@
 	.social{
 		background-color: $footerBottom;
 		padding: 1em 0;
+		div{
+			div{
+				div{
+					div{
+						ul{
+							list-style: none;
+							padding: 0;
+							margin: 0;
+							display: flex;
+							li{
+								margin: 0 1em;
+								a{
+									color: white;
+									font-size: 0.8em;
+
+									&:hover{
+										color: $color;
+										text-decoration: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

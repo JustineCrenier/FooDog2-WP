@@ -1,0 +1,19 @@
+HEADER
+	Newsletter single page
+INDEX
+	les boutons share sous les featured post
+	la paginations pour les latest post
+SIDEBAR
+	Boutons réseaux sociaux
+	Bouton Pub
+	texte
+FOOTER
+	Instagram
+	Bouton back to top
+CATEGORY
+	Share button
+	pagination
+SINGLE
+	Share button
+	Might also like
+	Comment
