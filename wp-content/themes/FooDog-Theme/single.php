@@ -48,7 +48,7 @@
 				<div class="col-12 might-like">
 					<h2 class="text-left">You also might like</h2>
 				</div>
-				<div class="col-12 might-like-content">
+				<div class="col-12 might-like-content d-flex justify-content-center">
 					<?php
 						$args = array(
 		    				'posts_per_page' => 3
@@ -63,6 +63,9 @@
 							</div>	
 						<?php endwhile; endif; ?>
 					</div>
+				</div>
+				<div class="col-12 comment-zone">
+					<?php comment_form(); ?>
 				</div>
 			</div>
 		</div>

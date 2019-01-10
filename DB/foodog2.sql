@@ -3,17 +3,25 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 10, 2019 at 12:29 PM
--- Server version: 5.7.23
+-- Generation Time: Jan 10, 2019 at 03:54 PM
+-- Server version: 5.7.24-log
 -- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `foodog2`
 --
-CREATE DATABASE IF NOT EXISTS `foodog2` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 USE `foodog2`;
 
 -- --------------------------------------------------------
@@ -129,13 +137,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:2:{i:0;s:30:\"advanced-custom-fields/acf.php\";i:1;s:43:\"custom-post-type-ui/custom-post-type-ui.php\";}', 'yes'),
+(33, 'active_plugins', 'a:3:{i:0;s:30:\"advanced-custom-fields/acf.php\";i:1;s:43:\"custom-post-type-ui/custom-post-type-ui.php\";i:2;s:28:\"menu-social-icons/plugin.php\";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
 (37, 'gmt_offset', '0', 'yes'),
 (38, 'default_email_category', '1', 'yes'),
-(39, 'recently_edited', '', 'no'),
+(39, 'recently_edited', 'a:2:{i:0;s:75:\"C:\\MAMP\\htdocs\\FooDog2-WP/wp-content/plugins/advanced-custom-fields/acf.php\";i:1;s:0:\"\";}', 'no'),
 (40, 'template', 'FooDog-Theme', 'yes'),
 (41, 'stylesheet', 'FooDog-Theme', 'yes'),
 (42, 'comment_whitelist', '1', 'yes'),
@@ -208,13 +216,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (109, 'widget_tag_cloud', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (110, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (111, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
-(112, 'cron', 'a:5:{i:1547125147;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1547128153;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1547157547;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1547200760;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(112, 'cron', 'a:5:{i:1547135947;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1547157547;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1547200760;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1547214553;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (120, '_site_transient_timeout_browser_0ac1f9240df96b3586c220faef490724', '1547200761', 'no'),
 (121, '_site_transient_browser_0ac1f9240df96b3586c220faef490724', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"71.0.3578.98\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
 (125, 'can_compress_scripts', '0', 'no'),
 (138, 'theme_mods_twentynineteen', 'a:3:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1546596292;s:4:\"data\";a:2:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
 (139, 'current_theme', 'FooDog', 'yes'),
-(140, 'theme_mods_FooDog-Theme', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:2:{s:9:\"main-menu\";i:6;s:11:\"footer-menu\";i:11;}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1546606609;s:4:\"data\";a:1:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}}', 'yes'),
+(140, 'theme_mods_FooDog-Theme', 'a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:3:{s:9:\"main-menu\";i:6;s:11:\"footer-menu\";i:11;s:6:\"social\";i:13;}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1546606609;s:4:\"data\";a:1:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}}', 'yes'),
 (141, 'theme_switched', '', 'yes'),
 (150, 'recently_activated', 'a:0:{}', 'yes'),
 (151, 'acf_version', '5.7.9', 'yes'),
@@ -245,7 +253,11 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (298, '_transient_timeout_dash_v2_bd94b8f41e74bae2f4dc72e9bd8379af', '1547166010', 'no'),
 (299, '_transient_dash_v2_bd94b8f41e74bae2f4dc72e9bd8379af', '<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'http://feedproxy.google.com/~r/WordpressFrancophone/~3/BFWuQgyALjg/\'>Think WP, le documentaire vidéo sur WordPress enfin disponible !</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'http://feedproxy.google.com/~r/wpfr/~3/7tD5pDW7oQI/\'>Retours sur le WordCamp US Nashville 2018</a></li><li><a class=\'rsswidget\' href=\'http://feedproxy.google.com/~r/wpfr/~3/GMmJgiVNI8A/\'>16 indices qui laissent penser que votre WordPress court le risque d’être hacké</a></li><li><a class=\'rsswidget\' href=\'http://feedproxy.google.com/~r/wpfr/~3/U6OdKEMnsO8/\'>Ajouter des blocs paragraphe avec Gutenberg</a></li></ul></div>', 'no'),
 (300, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1547166010', 'no'),
-(301, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:2:{s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:5:{i:0;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:21:\"Gutenberg theme night\";s:3:\"url\";s:65:\"https://www.meetup.com/Antwerp-WordPress-Meetup/events/255361402/\";s:6:\"meetup\";s:24:\"Antwerp WordPress Meetup\";s:10:\"meetup_url\";s:48:\"https://www.meetup.com/Antwerp-WordPress-Meetup/\";s:4:\"date\";s:19:\"2019-01-17 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:18:\"Antwerpen, Belgium\";s:7:\"country\";s:2:\"be\";s:8:\"latitude\";d:51.22154;s:9:\"longitude\";d:4.40455;}}i:1;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:26:\"WordPress meetup Eindhoven\";s:3:\"url\";s:67:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/events/257156203/\";s:6:\"meetup\";s:26:\"WordPress Meetup Eindhoven\";s:10:\"meetup_url\";s:50:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/\";s:4:\"date\";s:19:\"2019-01-28 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:22:\"Eindhoven, Netherlands\";s:7:\"country\";s:2:\"nl\";s:8:\"latitude\";d:51.43314;s:9:\"longitude\";d:5.432063;}}i:2;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:13:\"WPinLille #27\";s:3:\"url\";s:50:\"https://www.meetup.com/WPinLille/events/256836737/\";s:6:\"meetup\";s:9:\"WPinLille\";s:10:\"meetup_url\";s:33:\"https://www.meetup.com/WPinLille/\";s:4:\"date\";s:19:\"2019-02-06 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:13:\"Lille, France\";s:7:\"country\";s:2:\"fr\";s:8:\"latitude\";d:50.636425;s:9:\"longitude\";d:3.060836;}}i:3;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:24:\"WordPress Meetup Antwerp\";s:3:\"url\";s:65:\"https://www.meetup.com/Antwerp-WordPress-Meetup/events/255361408/\";s:6:\"meetup\";s:24:\"Antwerp WordPress Meetup\";s:10:\"meetup_url\";s:48:\"https://www.meetup.com/Antwerp-WordPress-Meetup/\";s:4:\"date\";s:19:\"2019-02-18 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:18:\"Antwerpen, Belgium\";s:7:\"country\";s:2:\"be\";s:8:\"latitude\";d:51.22154;s:9:\"longitude\";d:4.40455;}}i:4;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:26:\"WordPress meetup Eindhoven\";s:3:\"url\";s:67:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/events/257156213/\";s:6:\"meetup\";s:26:\"WordPress Meetup Eindhoven\";s:10:\"meetup_url\";s:50:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/\";s:4:\"date\";s:19:\"2019-02-25 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:22:\"Eindhoven, Netherlands\";s:7:\"country\";s:2:\"nl\";s:8:\"latitude\";d:51.43314;s:9:\"longitude\";d:5.432063;}}}}', 'no');
+(301, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:2:{s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:5:{i:0;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:21:\"Gutenberg theme night\";s:3:\"url\";s:65:\"https://www.meetup.com/Antwerp-WordPress-Meetup/events/255361402/\";s:6:\"meetup\";s:24:\"Antwerp WordPress Meetup\";s:10:\"meetup_url\";s:48:\"https://www.meetup.com/Antwerp-WordPress-Meetup/\";s:4:\"date\";s:19:\"2019-01-17 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:18:\"Antwerpen, Belgium\";s:7:\"country\";s:2:\"be\";s:8:\"latitude\";d:51.22154;s:9:\"longitude\";d:4.40455;}}i:1;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:26:\"WordPress meetup Eindhoven\";s:3:\"url\";s:67:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/events/257156203/\";s:6:\"meetup\";s:26:\"WordPress Meetup Eindhoven\";s:10:\"meetup_url\";s:50:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/\";s:4:\"date\";s:19:\"2019-01-28 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:22:\"Eindhoven, Netherlands\";s:7:\"country\";s:2:\"nl\";s:8:\"latitude\";d:51.43314;s:9:\"longitude\";d:5.432063;}}i:2;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:13:\"WPinLille #27\";s:3:\"url\";s:50:\"https://www.meetup.com/WPinLille/events/256836737/\";s:6:\"meetup\";s:9:\"WPinLille\";s:10:\"meetup_url\";s:33:\"https://www.meetup.com/WPinLille/\";s:4:\"date\";s:19:\"2019-02-06 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:13:\"Lille, France\";s:7:\"country\";s:2:\"fr\";s:8:\"latitude\";d:50.636425;s:9:\"longitude\";d:3.060836;}}i:3;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:24:\"WordPress Meetup Antwerp\";s:3:\"url\";s:65:\"https://www.meetup.com/Antwerp-WordPress-Meetup/events/255361408/\";s:6:\"meetup\";s:24:\"Antwerp WordPress Meetup\";s:10:\"meetup_url\";s:48:\"https://www.meetup.com/Antwerp-WordPress-Meetup/\";s:4:\"date\";s:19:\"2019-02-18 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:18:\"Antwerpen, Belgium\";s:7:\"country\";s:2:\"be\";s:8:\"latitude\";d:51.22154;s:9:\"longitude\";d:4.40455;}}i:4;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:26:\"WordPress meetup Eindhoven\";s:3:\"url\";s:67:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/events/257156213/\";s:6:\"meetup\";s:26:\"WordPress Meetup Eindhoven\";s:10:\"meetup_url\";s:50:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/\";s:4:\"date\";s:19:\"2019-02-25 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:22:\"Eindhoven, Netherlands\";s:7:\"country\";s:2:\"nl\";s:8:\"latitude\";d:51.43314;s:9:\"longitude\";d:5.432063;}}}}', 'no'),
+(302, '_site_transient_timeout_community-events-1aecf33ab8525ff212ebdffbb438372e', '1547167252', 'no'),
+(303, '_site_transient_community-events-1aecf33ab8525ff212ebdffbb438372e', 'a:2:{s:8:\"location\";a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}s:6:\"events\";a:5:{i:0;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:21:\"Gutenberg theme night\";s:3:\"url\";s:65:\"https://www.meetup.com/Antwerp-WordPress-Meetup/events/255361402/\";s:6:\"meetup\";s:24:\"Antwerp WordPress Meetup\";s:10:\"meetup_url\";s:48:\"https://www.meetup.com/Antwerp-WordPress-Meetup/\";s:4:\"date\";s:19:\"2019-01-17 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:18:\"Antwerpen, Belgium\";s:7:\"country\";s:2:\"be\";s:8:\"latitude\";d:51.22153999999999740566636319272220134735107421875;s:9:\"longitude\";d:4.404550000000000409272615797817707061767578125;}}i:1;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:26:\"WordPress meetup Eindhoven\";s:3:\"url\";s:67:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/events/257156203/\";s:6:\"meetup\";s:26:\"WordPress Meetup Eindhoven\";s:10:\"meetup_url\";s:50:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/\";s:4:\"date\";s:19:\"2019-01-28 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:22:\"Eindhoven, Netherlands\";s:7:\"country\";s:2:\"nl\";s:8:\"latitude\";d:51.43314000000000163481672643683850765228271484375;s:9:\"longitude\";d:5.43206300000000030792079996899701654911041259765625;}}i:2;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:13:\"WPinLille #27\";s:3:\"url\";s:50:\"https://www.meetup.com/WPinLille/events/256836737/\";s:6:\"meetup\";s:9:\"WPinLille\";s:10:\"meetup_url\";s:33:\"https://www.meetup.com/WPinLille/\";s:4:\"date\";s:19:\"2019-02-06 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:13:\"Lille, France\";s:7:\"country\";s:2:\"fr\";s:8:\"latitude\";d:50.636425000000002683009370230138301849365234375;s:9:\"longitude\";d:3.0608360000000001122089088312350213527679443359375;}}i:3;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:24:\"WordPress Meetup Antwerp\";s:3:\"url\";s:65:\"https://www.meetup.com/Antwerp-WordPress-Meetup/events/255361408/\";s:6:\"meetup\";s:24:\"Antwerp WordPress Meetup\";s:10:\"meetup_url\";s:48:\"https://www.meetup.com/Antwerp-WordPress-Meetup/\";s:4:\"date\";s:19:\"2019-02-18 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:18:\"Antwerpen, Belgium\";s:7:\"country\";s:2:\"be\";s:8:\"latitude\";d:51.22153999999999740566636319272220134735107421875;s:9:\"longitude\";d:4.404550000000000409272615797817707061767578125;}}i:4;a:7:{s:4:\"type\";s:6:\"meetup\";s:5:\"title\";s:26:\"WordPress meetup Eindhoven\";s:3:\"url\";s:67:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/events/257156213/\";s:6:\"meetup\";s:26:\"WordPress Meetup Eindhoven\";s:10:\"meetup_url\";s:50:\"https://www.meetup.com/WordPress-Meetup-Eindhoven/\";s:4:\"date\";s:19:\"2019-02-25 19:00:00\";s:8:\"location\";a:4:{s:8:\"location\";s:22:\"Eindhoven, Netherlands\";s:7:\"country\";s:2:\"nl\";s:8:\"latitude\";d:51.43314000000000163481672643683850765228271484375;s:9:\"longitude\";d:5.43206300000000030792079996899701654911041259765625;}}}}', 'no'),
+(304, '_transient_timeout_plugin_slugs', '1547211008', 'no'),
+(305, '_transient_plugin_slugs', 'a:5:{i:0;s:30:\"advanced-custom-fields/acf.php\";i:1;s:19:\"akismet/akismet.php\";i:2;s:43:\"custom-post-type-ui/custom-post-type-ui.php\";i:3;s:9:\"hello.php\";i:4;s:28:\"menu-social-icons/plugin.php\";}', 'no');
 
 -- --------------------------------------------------------
 
@@ -472,7 +484,40 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (235, 73, '_menu_item_target', ''),
 (236, 73, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
 (237, 73, '_menu_item_xfn', ''),
-(238, 73, '_menu_item_url', '');
+(238, 73, '_menu_item_url', ''),
+(239, 76, '_menu_item_type', 'custom'),
+(240, 76, '_menu_item_menu_item_parent', '0'),
+(241, 76, '_menu_item_object_id', '76'),
+(242, 76, '_menu_item_object', 'custom'),
+(243, 76, '_menu_item_target', ''),
+(244, 76, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(245, 76, '_menu_item_xfn', ''),
+(246, 76, '_menu_item_url', 'http://facebook.com'),
+(248, 77, '_menu_item_type', 'custom'),
+(249, 77, '_menu_item_menu_item_parent', '0'),
+(250, 78, '_menu_item_type', 'custom'),
+(251, 77, '_menu_item_object_id', '77'),
+(252, 78, '_menu_item_menu_item_parent', '0'),
+(253, 77, '_menu_item_object', 'custom'),
+(254, 78, '_menu_item_object_id', '78'),
+(255, 77, '_menu_item_target', ''),
+(256, 78, '_menu_item_object', 'custom'),
+(257, 77, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(258, 78, '_menu_item_target', ''),
+(259, 77, '_menu_item_xfn', ''),
+(260, 78, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(261, 77, '_menu_item_url', 'http://twitter.com'),
+(262, 78, '_menu_item_xfn', ''),
+(264, 78, '_menu_item_url', 'http://twitter.com'),
+(265, 78, '_menu_item_orphaned', '1547124679'),
+(266, 79, '_menu_item_type', 'custom'),
+(267, 79, '_menu_item_menu_item_parent', '0'),
+(268, 79, '_menu_item_object_id', '79'),
+(269, 79, '_menu_item_object', 'custom'),
+(270, 79, '_menu_item_target', ''),
+(271, 79, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(272, 79, '_menu_item_xfn', ''),
+(273, 79, '_menu_item_url', 'http://instagram.com');
 
 -- --------------------------------------------------------
 
@@ -585,7 +630,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (71, 1, '2019-01-05 19:46:02', '2019-01-05 18:46:02', ' ', '', '', 'publish', 'closed', 'closed', '', '71', '', '', '2019-01-05 19:46:02', '2019-01-05 18:46:02', '', 0, 'http://localhost:8888/FooDog2-WP/?p=71', 2, 'nav_menu_item', '', 0),
 (72, 1, '2019-01-05 19:46:03', '2019-01-05 18:46:03', ' ', '', '', 'publish', 'closed', 'closed', '', '72', '', '', '2019-01-05 19:46:03', '2019-01-05 18:46:03', '', 0, 'http://localhost:8888/FooDog2-WP/?p=72', 3, 'nav_menu_item', '', 0),
 (73, 1, '2019-01-05 19:46:02', '2019-01-05 18:46:02', ' ', '', '', 'publish', 'closed', 'closed', '', '73', '', '', '2019-01-05 19:46:02', '2019-01-05 18:46:02', '', 0, 'http://localhost:8888/FooDog2-WP/?p=73', 1, 'nav_menu_item', '', 0),
-(75, 1, '2019-01-06 17:04:04', '2019-01-06 16:04:04', '<!-- wp:paragraph -->\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque diam sed feugiat fringilla. Nullam auctor arcu feugiat elit aliquet, et accumsan nisi egestas. Praesent mollis vitae erat ac convallis. Proin pretium sollicitudin tincidunt. Duis scelerisque erat vel facilisis cursus. Etiam imperdiet lacus nec pulvinar ornare. Cras vulputate eros augue, at interdum elit finibus porta. Suspendisse commodo convallis mi et malesuada. Fusce erat lorem, varius eget dui eu, aliquam fringilla dolor. Proin consequat orci sed odio fermentum bibendum. Curabitur commodo facilisis urna, eget ultrices sapien suscipit eu.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Sed sed gravida augue, pretium fringilla est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed lectus sed mauris varius congue nec sit amet neque. Suspendisse suscipit mattis eros, non vehicula quam bibendum vitae. Duis nec velit tortor. Nunc eget condimentum neque. Cras in suscipit risus.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Donec facilisis nulla ut est gravida, a tincidunt neque volutpat. In hac habitasse platea dictumst. Phasellus tempor turpis eu pellentesque consequat. Nullam non mauris facilisis, ornare nunc facilisis, pellentesque diam. Quisque est mauris, semper ut aliquet ac, vestibulum at lacus. In eu felis sed nunc semper maximus vitae ac augue. In fermentum et elit vel fringilla.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>hello test</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Morbi luctus condimentum porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor tincidunt consequat. Phasellus mauris neque, viverra vel sapien vitae, venenatis consequat purus. Maecenas fringilla libero urna, non sollicitudin eros sollicitudin ut. Nam faucibus commodo ipsum. Praesent tristique, nunc luctus finibus lacinia, eros nisl viverra sapien, in volutpat ante ex ac tortor. Integer vel dictum diam, vitae rhoncus enim. Morbi eget consectetur lectus.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Suspendisse augue leo, lacinia sit amet nibh in, ultrices sodales libero. Nunc quis gravida lectus. Quisque at ornare ipsum. Etiam at mi dapibus, placerat felis eu, interdum enim. Integer a ante velit. Integer efficitur a magna ut lobortis. In euismod malesuada tellus, nec volutpat lacus porttitor ut. Vivamus nibh purus, aliquet nec nisl eget, faucibus porta neque. Sed accumsan metus feugiat bibendum efficitur. Phasellus faucibus magna eu sapien feugiat aliquet. Maecenas vel felis dictum, laoreet purus id, convallis eros. Quisque bibendum vel orci vitae facilisis. Quisque tincidunt sed felis vitae venenatis. Ut sagittis eget massa eu sodales.</p>\n<!-- /wp:paragraph -->', 'Choisir son dog sitter', '', 'inherit', 'closed', 'closed', '', '46-revision-v1', '', '', '2019-01-06 17:04:04', '2019-01-06 16:04:04', '', 46, 'http://localhost:8888/FooDog2-WP/2019/01/06/46-revision-v1/', 0, 'revision', '', 0);
+(75, 1, '2019-01-06 17:04:04', '2019-01-06 16:04:04', '<!-- wp:paragraph -->\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque diam sed feugiat fringilla. Nullam auctor arcu feugiat elit aliquet, et accumsan nisi egestas. Praesent mollis vitae erat ac convallis. Proin pretium sollicitudin tincidunt. Duis scelerisque erat vel facilisis cursus. Etiam imperdiet lacus nec pulvinar ornare. Cras vulputate eros augue, at interdum elit finibus porta. Suspendisse commodo convallis mi et malesuada. Fusce erat lorem, varius eget dui eu, aliquam fringilla dolor. Proin consequat orci sed odio fermentum bibendum. Curabitur commodo facilisis urna, eget ultrices sapien suscipit eu.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Sed sed gravida augue, pretium fringilla est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed lectus sed mauris varius congue nec sit amet neque. Suspendisse suscipit mattis eros, non vehicula quam bibendum vitae. Duis nec velit tortor. Nunc eget condimentum neque. Cras in suscipit risus.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Donec facilisis nulla ut est gravida, a tincidunt neque volutpat. In hac habitasse platea dictumst. Phasellus tempor turpis eu pellentesque consequat. Nullam non mauris facilisis, ornare nunc facilisis, pellentesque diam. Quisque est mauris, semper ut aliquet ac, vestibulum at lacus. In eu felis sed nunc semper maximus vitae ac augue. In fermentum et elit vel fringilla.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>hello test</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Morbi luctus condimentum porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor tincidunt consequat. Phasellus mauris neque, viverra vel sapien vitae, venenatis consequat purus. Maecenas fringilla libero urna, non sollicitudin eros sollicitudin ut. Nam faucibus commodo ipsum. Praesent tristique, nunc luctus finibus lacinia, eros nisl viverra sapien, in volutpat ante ex ac tortor. Integer vel dictum diam, vitae rhoncus enim. Morbi eget consectetur lectus.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Suspendisse augue leo, lacinia sit amet nibh in, ultrices sodales libero. Nunc quis gravida lectus. Quisque at ornare ipsum. Etiam at mi dapibus, placerat felis eu, interdum enim. Integer a ante velit. Integer efficitur a magna ut lobortis. In euismod malesuada tellus, nec volutpat lacus porttitor ut. Vivamus nibh purus, aliquet nec nisl eget, faucibus porta neque. Sed accumsan metus feugiat bibendum efficitur. Phasellus faucibus magna eu sapien feugiat aliquet. Maecenas vel felis dictum, laoreet purus id, convallis eros. Quisque bibendum vel orci vitae facilisis. Quisque tincidunt sed felis vitae venenatis. Ut sagittis eget massa eu sodales.</p>\n<!-- /wp:paragraph -->', 'Choisir son dog sitter', '', 'inherit', 'closed', 'closed', '', '46-revision-v1', '', '', '2019-01-06 17:04:04', '2019-01-06 16:04:04', '', 46, 'http://localhost:8888/FooDog2-WP/2019/01/06/46-revision-v1/', 0, 'revision', '', 0),
+(76, 1, '2019-01-10 13:51:36', '2019-01-10 12:51:36', '', 'Facebook', '', 'publish', 'closed', 'closed', '', 'facebook', '', '', '2019-01-10 13:51:36', '2019-01-10 12:51:36', '', 0, 'http://localhost:8888/FooDog2-WP/?p=76', 1, 'nav_menu_item', '', 0),
+(77, 1, '2019-01-10 13:51:36', '2019-01-10 12:51:36', '', 'Twitter', '', 'publish', 'closed', 'closed', '', 'twitter', '', '', '2019-01-10 13:51:36', '2019-01-10 12:51:36', '', 0, 'http://localhost:8888/FooDog2-WP/?p=77', 2, 'nav_menu_item', '', 0),
+(78, 1, '2019-01-10 13:51:18', '0000-00-00 00:00:00', '', 'Twitter', '', 'draft', 'closed', 'closed', '', '', '', '', '2019-01-10 13:51:18', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/FooDog2-WP/?p=78', 1, 'nav_menu_item', '', 0),
+(79, 1, '2019-01-10 13:51:36', '2019-01-10 12:51:36', '', 'Instagram', '', 'publish', 'closed', 'closed', '', 'instagram', '', '', '2019-01-10 13:51:36', '2019-01-10 12:51:36', '', 0, 'http://localhost:8888/FooDog2-WP/?p=79', 3, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -629,7 +678,8 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (9, 'Hero', 'hero', 0),
 (10, 'Featured', 'featured', 0),
 (11, 'footer cat', 'footer-cat', 0),
-(12, 'Hero-one', 'hero-one', 0);
+(12, 'Hero-one', 'hero-one', 0),
+(13, 'Social', 'social', 0);
 
 -- --------------------------------------------------------
 
@@ -678,7 +728,10 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (70, 11, 0),
 (71, 11, 0),
 (72, 11, 0),
-(73, 11, 0);
+(73, 11, 0),
+(76, 13, 0),
+(77, 13, 0),
+(79, 13, 0);
 
 -- --------------------------------------------------------
 
@@ -710,7 +763,8 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 (9, 9, 'post_tag', '', 0, 4),
 (10, 10, 'post_tag', '', 0, 3),
 (11, 11, 'nav_menu', '', 0, 5),
-(12, 12, 'post_tag', '', 0, 1);
+(12, 12, 'post_tag', '', 0, 1),
+(13, 13, 'nav_menu', '', 0, 3);
 
 -- --------------------------------------------------------
 
@@ -746,7 +800,6 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', 'wp496_privacy'),
 (15, 1, 'show_welcome_panel', '0'),
-(16, 1, 'session_tokens', 'a:4:{s:64:\"944ea57d69d38e75150b1eef24e0c4b59e2750d3c220911e4b6789ca2c4c60b1\";a:4:{s:10:\"expiration\";i:1546862647;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1546689847;}s:64:\"1163a58642317b5e1a08bcf7d711a60a6bb931073aeee00f44566f237c5597c8\";a:4:{s:10:\"expiration\";i:1546862649;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1546689849;}s:64:\"71a0b95c32cda14ef4b94560e22cff30c96fd1593721c6c3466b86d9011fbe9b\";a:4:{s:10:\"expiration\";i:1547020035;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1546847235;}s:64:\"fab11c7eafaa2cb7204da296f1f3143a64da1497b3edc8d0da66cf560ef4b4e5\";a:4:{s:10:\"expiration\";i:1547020037;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1546847237;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
 (18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:9:\"127.0.0.0\";}'),
 (19, 2, 'nickname', 'Adrien'),
@@ -779,7 +832,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (46, 3, 'dismissed_wp_pointers', 'wp496_privacy'),
 (47, 1, 'closedpostboxes_dashboard', 'a:3:{i:0;s:18:\"dashboard_activity\";i:1;s:21:\"dashboard_quick_press\";i:2;s:17:\"dashboard_primary\";}'),
 (48, 1, 'metaboxhidden_dashboard', 'a:0:{}'),
-(49, 1, 'nav_menu_recently_edited', '11'),
+(49, 1, 'nav_menu_recently_edited', '13'),
 (50, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
 (51, 1, 'metaboxhidden_nav-menus', 'a:0:{}'),
 (52, 2, 'session_tokens', 'a:1:{s:64:\"1f0649b1d41c8292e5f36d0c3b75f3ab001c8ca187b690bba8a370caa642f22a\";a:4:{s:10:\"expiration\";i:1547295608;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:119:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3664.3 Safari/537.36\";s:5:\"login\";i:1547122808;}}'),
@@ -788,7 +841,8 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (55, 2, 'wp_user-settings-time', '1546610073'),
 (56, 1, 'wp_user-settings', 'libraryContent=browse'),
 (57, 1, 'wp_user-settings-time', '1546632486'),
-(58, 1, 'closedpostboxes_nav-menus', 'a:0:{}');
+(58, 1, 'closedpostboxes_nav-menus', 'a:0:{}'),
+(59, 1, 'session_tokens', 'a:1:{s:64:\"ee701473a87f07b8e332e8ec1925512d4ae6f90d5c28104362eb93955a0a2605\";a:4:{s:10:\"expiration\";i:1547303594;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1547130794;}}');
 
 -- --------------------------------------------------------
 
@@ -948,19 +1002,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=302;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
 
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=239;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
 
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
@@ -972,22 +1026,27 @@ ALTER TABLE `wp_termmeta`
 -- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `wp_users`
 --
 ALTER TABLE `wp_users`
   MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

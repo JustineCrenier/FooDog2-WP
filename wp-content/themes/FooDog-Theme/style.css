@@ -320,7 +320,8 @@ header .nav-single div .menu-header-container ul {
           top: 50%;
           margin-left: 15px; }
     .single-post div div div .might-like-content {
-      padding: 0; }
+      padding: 0 0 2em 0;
+      border-bottom: 1px solid lightgrey; }
       .single-post div div div .might-like-content div {
         padding: 0; }
         .single-post div div div .might-like-content div div {
@@ -330,6 +331,14 @@ header .nav-single div .menu-header-container ul {
             object-fit: cover;
             width: 180px;
             height: 160px; }
+          .single-post div div div .might-like-content div div a h3 {
+            font-size: 1em;
+            margin-top: 1em; }
+    .single-post div div div .comment-zone {
+      padding: 0;
+      margin-top: 1.5em; }
+      .single-post div div div .comment-zone div {
+        padding: 0; }
 
 .page-header div {
   margin: 2em 0; }
