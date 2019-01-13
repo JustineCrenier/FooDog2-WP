@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<?php if (is_single()) : ?>
-			<div class="container nav-single">
+			<div class="container-fluid nav-single">
 				<div class="row navbar-light nav-row">
 					<div class="col-4 d-flex">
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,13 @@
     					</button>
 						<a href="<?php bloginfo( 'url' ); ?>" class="h1-title"><h1><?php echo get_bloginfo( 'name' ); ?></h1></a>
 					</div>
-					<div class="col-4 d-flex justify-content-center align-items-center">Newsletter</div>
+					<div class="col-4 d-flex justify-content-center align-items-center">
+						<form action="#" class="row d-flex align-items-center">
+							<span class="col-4">Digest in Your Inbox</span>
+							<input class="col-5" type="email" placeholder="YOUR EMAIL">
+							<input class="col-3" type="submit" value="SIGN UP">
+						</form>
+					</div>
 					<div class="col-4 d-flex justify-content-end align-items-center">
 						<button type="button" class="button-search" data-toggle="modal" data-target="#search">
 							<i class="fas fa-search"></i>

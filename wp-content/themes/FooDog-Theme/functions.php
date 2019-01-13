@@ -35,8 +35,19 @@ function notux_widgets_init() {
 	        'before_title' => '<h2 class="widgettitle">',
 	        'after_title' => '</h2>'
 	    );
+	    $sidebar3 = array(
+	    	'name'			=> __( 'Social-post', 'FooDog-Theme' ),
+			'id'			=> 'zone-widgets-3',
+			'description'	=> __( 'widgets pour les réseaux sociaux.', 'FooDog-Theme' ),
+	        'before_widget' => '<div class="widget %2$s">',
+	        'after_widget' => '</div>',
+	        'before_title' => '<h2 class="widgettitle">',
+	        'after_title' => '</h2>'
+	    );
 		register_sidebar($sidebar1);
 		register_sidebar($sidebar2);
+		register_sidebar($sidebar3);
+
 }
 
 add_action( 'widgets_init', 'notux_widgets_init' );

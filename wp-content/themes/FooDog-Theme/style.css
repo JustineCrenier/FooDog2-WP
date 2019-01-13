@@ -51,6 +51,14 @@ h4 ul {
     color: #ff8d6a;
     text-decoration: none; }
 
+.i-share {
+  border: 1px solid lightgrey;
+  padding: 0.8em 1.1em;
+  border-radius: 100%;
+  background-color: transparent; }
+  .i-share:hover {
+    cursor: pointer; }
+
 header .social-wrapper {
   margin-top: 1.5em; }
   header .social-wrapper div div .button-search {
@@ -107,8 +115,22 @@ header .nav {
 header .nav-single .nav-row {
   border-bottom: 1px solid lightgrey;
   padding: 2em 0; }
+  header .nav-single .nav-row div form span {
+    font-size: 0.8em; }
+  header .nav-single .nav-row div form input[type='submit'] {
+    width: 100px;
+    font-size: 0.8em;
+    padding: 6px 0;
+    border: none;
+    color: white;
+    background-color: black; }
+    header .nav-single .nav-row div form input[type='submit']:hover {
+      background-color: #ff8d6a; }
   header .nav-single .nav-row div button {
     margin-right: 15px; }
+  header .nav-single .nav-row div a h1 {
+    font-size: 1.5em;
+    font-weight: bold; }
   header .nav-single .nav-row .button-search {
     background-color: transparent;
     border: none;
@@ -153,7 +175,7 @@ header .nav-single div .menu-header-container ul {
     object-fit: cover;
     margin-bottom: 15px; }
   .hero div div.hero-post div div h3 {
-    font-size: 1em; }
+    font-size: 0.8em; }
 
 .wrapper-content {
   overflow-x: hidden; }
@@ -200,11 +222,52 @@ header .nav-single div .menu-header-container ul {
         font-size: 0.7em; }
   .latest-post div div div div p {
     text-align: center; }
+  .latest-post div div div div.last-page {
+    margin: 1em 0; }
+    .latest-post div div div div.last-page span, .latest-post div div div div.last-page a {
+      margin: 0 5px;
+      padding: 10px 17px;
+      border-radius: 100%; }
+    .latest-post div div div div.last-page .current {
+      border: 1px solid #3a3e43;
+      background-color: #3a3e43;
+      color: white; }
+    .latest-post div div div div.last-page a {
+      border: 1px solid #3a3e43;
+      background-color: white;
+      color: #3a3e43; }
+      .latest-post div div div div.last-page a:hover {
+        background-color: #3a3e43;
+        color: white;
+        text-decoration: none; }
 
 .sidebar {
-  margin-top: 3em; }
-  .sidebar .img-widget {
-    display: block; }
+  margin: 3em 0 0 2em; }
+  .sidebar div {
+    width: 100%; }
+    .sidebar div .at-share-btn-elements {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%; }
+      .sidebar div .at-share-btn-elements a {
+        width: 100%;
+        display: block; }
+  .sidebar .widget_media_image {
+    margin-top: 1.5em; }
+    .sidebar .widget_media_image img {
+      width: 100%; }
+  .sidebar .button-side {
+    text-transform: uppercase;
+    background-color: #ff8d6a;
+    border: 1px solid #ff8d6a;
+    color: white;
+    padding: 1em 1.5em;
+    margin-top: -2em; }
 
 .cat-header {
   background-color: lightgrey;
