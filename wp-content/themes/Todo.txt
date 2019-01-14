@@ -6,3 +6,4 @@ CATEGORY
 SINGLE
 	Share button
 	Comment
+	widget sidebar
