@@ -66,6 +66,15 @@ h4{
 		text-decoration: none;
 	}
 }
+.i-share{
+	border: 1px solid lightgrey;
+	padding: 0.8em 1.1em;
+	border-radius: 100%;
+	background-color: transparent;
+	&:hover{
+		cursor: pointer;
+	}					
+}
 //HEADER
 @import 'header';
 
@@ -85,6 +94,9 @@ h4{
 
 //SINGLE PAGE
 @import 'single';
+
+//SEARCH PAGE
+@import 'search';
 
 //FOOTER
 @import 'footer';

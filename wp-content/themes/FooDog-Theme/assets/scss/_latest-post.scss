@@ -27,6 +27,29 @@
 						text-align: center;
 					}
 				}
+				div.last-page{
+					margin: 1em 0;
+					span, a {
+						margin: 0 5px;
+						padding: 10px 17px;
+						border-radius: 100%;
+					}
+					.current{
+						border: 1px solid $footerTop;
+						background-color: $footerTop;
+						color: white;
+					}
+					a{
+						border: 1px solid $footerTop;
+						background-color: white;
+						color: $footerTop;
+						&:hover{
+							background-color:$footerTop;
+							color:white;
+							text-decoration: none;
+						}
+					}
+				}
 			}
 		}
 	}
