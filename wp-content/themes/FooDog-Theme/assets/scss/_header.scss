@@ -1,4 +1,38 @@
 header{
+	.social-wrapper{
+		margin-top: 1.5em;
+		div{
+			div{
+				.button-search{
+					border: none;
+					background-color: transparent;
+					i{
+						cursor: pointer;
+					}
+				}
+				div{
+					ul{
+						list-style: none;
+						display: flex;
+						margin: 0;
+						padding: 0;
+						justify-content: flex-end;
+						li{
+							margin: 0 0.8em;
+							a{
+								text-decoration: none;
+								color: black;
+								font-size: 0.8em;
+								&:hover{
+									color: $color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	.site-title{
 		h1{
 			font-size: 3em;
@@ -25,6 +59,69 @@ header{
 							&:hover{
 								text-decoration: none;
 								color: $color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.nav-single{
+		.nav-row {
+			border-bottom: 1px solid lightgrey;
+			padding: 2em 0;
+			div{
+				form{
+					span{
+						font-size: 0.8em;
+					}
+					input[type='submit']{
+						width: 100px;
+						font-size: 0.8em;
+						padding: 6px 0;
+						border: none;
+						color: white;
+						background-color: black;
+
+						&:hover{
+							background-color: $color;
+						}
+					}
+				}
+				button{
+					margin-right: 15px;
+				}
+				a{
+					h1{
+						font-size: 1.5em;
+						font-weight: bold;
+					}
+				}
+			}
+			.button-search{
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+			}
+		}
+		div{
+			.menu-header-container{
+				ul{
+					padding: 0;	
+					margin: 0;	
+					list-style: none;
+					display: flex;
+					justify-content: center;
+					padding: 2em 0;
+					li{
+						margin: 0 1.5em;
+						a{
+							text-transform: uppercase;
+							color: black;
+
+							&:hover{
+								color: $color;
+								text-decoration: none;
 							}
 						}
 					}

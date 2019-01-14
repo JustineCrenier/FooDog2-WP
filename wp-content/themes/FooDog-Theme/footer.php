@@ -44,8 +44,8 @@
 			<!-- Mettre les réseaux ici -->
 			<div class="container">
 				<div class="row">
-					<div class="col-12 d-flex justify-content-center">
-						facebook Twitter Instagram
+					<div class="col-12 d-flex justify-content-end">
+						<?php wp_nav_menu(array('theme_location' => 'social')); ?>
 					</div>
 				</div>
 			</div>

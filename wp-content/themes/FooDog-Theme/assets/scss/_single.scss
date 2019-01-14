@@ -3,6 +3,7 @@
 	div{
 		div{
 			div{
+				overflow: hidden;
 				div{
 					ul{
 						list-style: none;
@@ -18,17 +19,111 @@
 					}
 				}
 				h2{
+					text-align: center;
 					text-transform: uppercase;
 					font-weight: bold;
 					font-size: 1.5em;
 					margin-bottom: 1em;
 				}
 				div{
+					padding: 0 5em;
 					img{
 						width: 520px;
 						height: 320px;
 						object-fit: cover;
 					}	
+				}
+				.content-single{
+					h3{
+						text-transform: inherit;
+					}
+				}
+				.newsletter{
+					margin: 1.5em 0;
+					border-bottom: 1px solid lightgrey;
+					h4{
+						font-weight: bold;
+					}
+					form{
+						margin-bottom: 1.5em;
+						input{
+							padding: 0.5em 1em;
+						}
+						input:nth-child(2){
+							border: none;
+							background-color: $color;
+							color: white;
+						}
+					}
+				}
+				.previous-next{
+					padding-bottom: 1.5em;
+					border-bottom: 1px solid lightgrey;
+					a{
+						color: black;
+						&:hover{
+							color: $color;
+							text-decoration: none;
+						}
+					}
+				}
+				.pub{
+					margin: 3em 0 1.5em 0;
+					div{
+						padding: 0;
+						.circle{
+							width: 100px;
+							height: 100px;
+							border-radius: 100%;
+							background-color: $color;
+							color: white;
+							text-transform: uppercase;
+						}
+					}
+				}
+				.might-like{
+					padding: 0;
+					h2{
+						font-size: 1em;
+						font-weight: bold;
+						&:after{
+							content: '';
+							position: absolute;
+							border-bottom: 2px solid lightgrey;
+							width: 100%;
+							top: 50%;
+							margin-left: 15px;
+						}
+					}
+				}
+				.might-like-content{
+					padding: 0 0 2em 0;
+					border-bottom: 1px solid lightgrey;
+					div{
+						padding: 0;
+						div{
+							padding: 0;
+							img{
+								object-fit: cover;
+								width: 180px;
+								height: 160px;
+							}
+							a{
+								h3{
+									font-size: 1em;
+									margin-top: 1em;
+								}
+							}
+						}
+					}
+				}
+				.comment-zone{
+					padding: 0;
+					margin-top: 1.5em;
+					div{
+						padding: 0;
+					}
+
 				}
 			}
 		}
