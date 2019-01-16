@@ -5,7 +5,7 @@
  *
  * @package WordPress
  */
-
+Ceci va créer un conflit
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *
