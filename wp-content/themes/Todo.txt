@@ -1,8 +1,5 @@
 FOOTER
 	Instagram
-	Bouton back to top
-CATEGORY
-	pagination
 SINGLE
 	Share button
 	Comment

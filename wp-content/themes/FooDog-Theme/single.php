@@ -4,6 +4,7 @@
 	<div class="row">
 		<div class="col-9">
 			<div class="row">
+			<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
 				<div class="col-12 d-flex justify-content-center">
 					<?php the_category(); ?>
 				</div>
@@ -13,9 +14,21 @@
 				<div class="col-12 d-flex justify-content-center">
 					<?php the_post_thumbnail('Hero-one'); ?>
 				</div>
+				<!--share button-->
+				<?php
+				if( is_active_sidebar( 'zone-widgets-3' ) ):
+				dynamic_sidebar( 'zone-widgets-3' );
+				endif;
+				?>		
 				<div class="col-12 d-flex flex-column align-items-start content-single">
 					<?php echo wpautop($post->post_content); ?> 
 				</div>
+				<!--share button-->
+				<?php
+				if( is_active_sidebar( 'zone-widgets-3' ) ):
+				dynamic_sidebar( 'zone-widgets-3' );
+				endif;
+				?>		
 				<div class="newsletter col-12">
 					<h4 class="text-center">Subscribe To The Digest Newsletter</h4>
 					<p class="text-center">Get health and wellness tips about your dog delivered to your inbox</p>
@@ -68,6 +81,7 @@
 					<?php comment_form(); ?>
 				</div>
 			</div>
+			<?php endwhile; endif; ?>
 		</div>
 		<div class="col-3">
 			<!-- Sidebar -->
