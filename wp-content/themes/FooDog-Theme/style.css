@@ -448,6 +448,34 @@ header .nav-single div .menu-header-container ul li a:hover {
   margin-top: 1em;
 }
 
+.last-page {
+  margin: 1em 0;
+}
+
+.last-page span, .last-page a {
+  margin: 0 5px;
+  padding: 10px 17px;
+  border-radius: 100%;
+}
+
+.last-page .current {
+  border: 1px solid #3a3e43;
+  background-color: #3a3e43;
+  color: white;
+}
+
+.last-page a {
+  border: 1px solid #3a3e43;
+  background-color: white;
+  color: #3a3e43;
+}
+
+.last-page a:hover {
+  background-color: #3a3e43;
+  color: white;
+  text-decoration: none;
+}
+
 .single-post {
   margin-top: 2em;
 }

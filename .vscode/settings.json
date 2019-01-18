@@ -1,0 +1,9 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "./../FooDog2-WP/wp-content/themes/FooDog-Theme"
+        }
+      ]
+}
