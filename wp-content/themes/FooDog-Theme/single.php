@@ -2,7 +2,7 @@
 <!-- content single post -->
 <div class="container single-post">
 	<div class="row">
-		<div class="col-9 single-col">
+		<div class="col-lg-9 col-md-12 single-col">
 			<div class="row">
 			<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
 				<div class="col-12 d-flex justify-content-center">
@@ -43,12 +43,12 @@
 				</div>
 				<div class="col-12 pub">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-3 col-md-12">
 							<div class="circle d-flex align-items-center justify-content-center text-center">
 								The <br> Farmer <br> dog
 							</div>
 						</div>
-						<div class="col-9">
+						<div class="col-lg-9 col-md-12">
 							<div class="row">
 								<h3 class="col-12">The Farmer's Dog</h3>
 								<p class="col-12">
@@ -119,7 +119,7 @@
 			</div>
 			<?php endwhile; endif; ?>
 		</div>
-		<div class="col-3 single-sidebar">
+		<div class="col-lg-3 col-md-12 single-sidebar">
 			<!-- Sidebar -->
 			<?php get_sidebar(); ?>
 		</div>

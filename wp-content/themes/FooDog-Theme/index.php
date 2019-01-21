@@ -67,7 +67,9 @@
 										<h4 class="d-flex">Featured <?php the_category(); ?> <span>|</span></h4>
 										<a href="<?php the_permalink(); ?>" class="link-title"><h3><?php the_title(); ?></h3></a>
 										<p><?php the_excerpt(); ?></p>
-										<button class="i-share" data-toggle="modal" data-target="#sharePost"><i class="fas fa-share"></i></button>
+										<div class="row d-flex align-items-center btnShare">
+											<button class="i-share" data-toggle="modal" data-target="#sharePost"><i class="fas fa-share"></i></button><p class="share">Share</p>
+										</div>
 										<div class="modal fade" id="sharePost" tabindex="-1" role="dialog" aria-labelledby="sharePost" aria-hidden="true">
 										  <div class="modal-dialog" role="document">
 										    <div class="modal-content">
