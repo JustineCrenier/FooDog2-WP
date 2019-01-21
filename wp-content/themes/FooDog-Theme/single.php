@@ -78,7 +78,43 @@
 					</div>
 				</div>
 				<div class="col-12 comment-zone">
-					<?php comment_form(); ?>
+					<?php
+						$comments_args = array ( 
+							// change the title of send button 
+							'label_submit'=>'Laisser un commentaire',
+							// change the title of the reply section
+							'title_reply'=>'Laisser une réponse',
+							'comment_notes_before' => '',
+							'comment_notes_after'  => '',
+							// redefine your own textarea (the comment body)
+							'comment_field' => '<p class="comment-form-comment col-12"><textarea id="comment" class="col-12" name="comment" cols="45" rows="8" placeholder="Ecrivez ici votre commentaire..." aria-required="true"></textarea></p>',
+							//redefine personnal area
+							'fields' => apply_filters(
+								'comment_form_default_fields', array(
+								'<div class="col-12 contentNameEmail row">',
+								'author' =>'<p class="comment-form-author col-4"><input class="col-12" id="author" placeholder="Nom..." name="author" type="text" value="' .
+								esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
+								'<label for="author">' . __( '' ) . '</label> ' .
+								( $req ? '<span class="required"></span>' : '' ) .
+								'</p>'
+								,
+
+								'email' => '<p class="comment-form-email col-4">' . '<input class="col-12" id="email" placeholder="Email..." name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) .
+								'" size="30"' . $aria_req . ' />' .
+								'<label for="email">' . __( '' ) . '</label> ' .
+								( $req ? '<span class="required"></span>' : '' )
+								.
+								'</p>',
+
+								'url' => '<p class="comment-form-url col-4">' .
+								'<input class="col-12" id="url" name="url" placeholder="Site web..." type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /> ' .
+								'<label for="url">' . __( '', 'domainreference' ) . '</label>' .
+								'</p>',
+								'</div>')
+							),
+						);
+						comment_form($comments_args);
+					?>
 				</div>
 			</div>
 			<?php endwhile; endif; ?>
