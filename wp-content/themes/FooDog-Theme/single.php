@@ -2,7 +2,7 @@
 <!-- content single post -->
 <div class="container single-post">
 	<div class="row">
-		<div class="col-9">
+		<div class="col-9 single-col">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center">
 					<?php the_category(); ?>
@@ -69,7 +69,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-3">
+		<div class="col-3 single-sidebar">
 			<!-- Sidebar -->
 			<?php get_sidebar(); ?>
 		</div>
