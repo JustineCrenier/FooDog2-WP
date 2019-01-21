@@ -24,8 +24,18 @@
 }
 
 .cat-content{
+	margin-top: 2.5em;
+	padding-bottom: 2.5em;	
+	border-bottom: 1px solid #f4f4f4;
+
+	.btnShare p{
+		margin:0 10px;
+		color:#c4c4c4;
+	}
+
 	div{
-		div{
+		div{			
+			
 			img{
 				width: 350px;
 				height: 250px;
@@ -74,3 +84,4 @@
 		}
 	}
 }
+
