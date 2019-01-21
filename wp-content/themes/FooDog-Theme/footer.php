@@ -37,6 +37,7 @@
 							Instagram
 						</h4>
 					</div>
+					<a href="#" class="back-to-top"><i class="fas fa-caret-up"></i></a>
 				</div>
 			</div>
 		</div>
