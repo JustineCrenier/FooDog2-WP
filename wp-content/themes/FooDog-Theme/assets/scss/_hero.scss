@@ -32,3 +32,11 @@
 		}
 	}
 }
+
+@media screen and (max-width:992px){
+	.hero-content{
+		display: flex;
+		justify-content: center;
+
+	}
+}

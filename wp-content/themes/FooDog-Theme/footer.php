@@ -2,11 +2,11 @@
 		<div class="row main-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-4 d-flex flex-column first-col">
+					<div class="col-lg-4 d-flex flex-column first-col">
 						<h4 class="titre-footer">Categories</h4>
 						<?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
 					</div>
-					<div class="col-4 d-flex flex-column second-col">
+					<div class="col-lg-4 col-m-8 d-flex flex-column second-col">
 						<h4 class="titre-footer">
 							Popular posts
 						</h4>
@@ -48,7 +48,7 @@
 			<!-- Mettre les réseaux ici -->
 			<div class="container">
 				<div class="row">
-					<div class="col-12 d-flex justify-content-end">
+					<div class="col-lg-12 d-flex justify-content-end">
 						<?php wp_nav_menu(array('theme_location' => 'social')); ?>
 					</div>
 				</div>
