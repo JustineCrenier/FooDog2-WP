@@ -36,7 +36,11 @@
 						<h4 class="titre-footer">
 							Instagram
 						</h4>
+						<!-- InstaWidget -->
+						<a href="https://instawidget.net/v/tag/animauxdroles" id="link-ca731a9b0baf219e286ae73a9ab88120b275698bbce51c31a0b928682d973777">#animauxdroles</a>
+						<script src="https://instawidget.net/js/instawidget.js?u=ca731a9b0baf219e286ae73a9ab88120b275698bbce51c31a0b928682d973777&width=300px"></script>
 					</div>
+					<a href="#" class="back-to-top"><i class="fas fa-caret-up"></i></a>
 				</div>
 			</div>
 		</div>
