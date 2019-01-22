@@ -1,11 +1,19 @@
 .hero{
 	margin-top: 2em;
+	/*.btnShare p{
+		margin:0 10px;
+		color:#c4c4c4;
+	}*/
+	
 	div{
+		
 		div.hero-one{
+			
 			img{
 				width: 520px;
 				height: 320px;
 				object-fit: cover;
+				
 			}
 			h4{
 				margin-top: 2em;
@@ -32,3 +40,12 @@
 		}
 	}
 }
+
+@media screen and (max-width:992px){
+	.hero-content{
+		display: flex;
+		justify-content: center;
+
+	}
+}
+

@@ -1,6 +1,4 @@
 FOOTER
 	Instagram
 SINGLE
-	Share button
-	Comment
 	widget sidebar

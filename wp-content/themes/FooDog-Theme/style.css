@@ -140,6 +140,15 @@ header .nav div .menu-header-container .menu {
   list-style: none;
 }
 
+@media screen and (max-width: 992px) {
+  header .nav div .menu-header-container .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 header .nav div .menu-header-container .menu li {
   margin: 0 1.5em;
 }
@@ -248,6 +257,17 @@ header .nav-single div .menu-header-container ul li a:hover {
 
 .hero div div.hero-post div div h3 {
   font-size: 0.8em;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .wrapper-content {
@@ -422,6 +442,17 @@ header .nav-single div .menu-header-container ul li a:hover {
   font-size: 0.7em;
 }
 
+.cat-content {
+  margin-top: 2.5em;
+  padding-bottom: 2.5em;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.cat-content .btnShare p {
+  margin: 0 10px;
+  color: #c4c4c4;
+}
+
 .cat-content div div img {
   width: 350px;
   height: 250px;
@@ -477,153 +508,96 @@ header .nav-single div .menu-header-container ul li a:hover {
 }
 
 .single-post {
-  margin-top: 2em;
-}
-
-.single-post div div div {
-  overflow: hidden;
-}
-
-.single-post div div div div ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1em 0;
-}
-
-.single-post div div div div ul li a {
-  text-transform: uppercase;
-  color: #ff8d6a;
-  font-weight: bold;
-}
-
-.single-post div div div h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.single-post div div div div {
-  padding: 0 5em;
-}
-
-.single-post div div div div img {
-  width: 520px;
-  height: 320px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.single-post div div div .content-single h3 {
-  text-transform: inherit;
-}
-
-.single-post div div div .newsletter {
-  margin: 1.5em 0;
-  border-bottom: 1px solid lightgrey;
-}
-
-.single-post div div div .newsletter h4 {
-  font-weight: bold;
-}
-
-.single-post div div div .newsletter form {
-  margin-bottom: 1.5em;
-}
-
-.single-post div div div .newsletter form input {
-  padding: 0.5em 1em;
-}
-
-.single-post div div div .newsletter form input:nth-child(2) {
-  border: none;
-  background-color: #ff8d6a;
-  color: white;
-}
-
-.single-post div div div .previous-next {
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid lightgrey;
-}
-
-.single-post div div div .previous-next a {
-  color: black;
-}
-
-.single-post div div div .previous-next a:hover {
-  color: #ff8d6a;
-  text-decoration: none;
-}
-
-.single-post div div div .pub {
-  margin: 3em 0 1.5em 0;
-}
-
-.single-post div div div .pub div {
-  padding: 0;
-}
-
-.single-post div div div .pub div .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: #ff8d6a;
-  color: white;
-  text-transform: uppercase;
-}
-
-.single-post div div div .might-like {
-  padding: 0;
-}
-
-.single-post div div div .might-like h2 {
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.single-post div div div .might-like h2:after {
-  content: '';
-  position: absolute;
-  border-bottom: 2px solid lightgrey;
-  width: 100%;
-  top: 50%;
-  margin-left: 15px;
-}
-
-.single-post div div div .might-like-content {
-  padding: 0 0 2em 0;
-  border-bottom: 1px solid lightgrey;
-}
-
-.single-post div div div .might-like-content div {
-  padding: 0;
-}
-
-.single-post div div div .might-like-content div div {
-  padding: 0;
-}
-
-.single-post div div div .might-like-content div div img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 180px;
-  height: 160px;
-}
-
-.single-post div div div .might-like-content div div a h3 {
-  font-size: 1em;
-  margin-top: 1em;
-}
-
-.single-post div div div .comment-zone {
-  padding: 0;
-  margin-top: 1.5em;
-}
-
-.single-post div div div .comment-zone div {
-  padding: 0;
-}
+  margin-top: 2em; }
+  .single-post div .single-col div {
+    overflow: hidden; }
+    .single-post div .single-col div div ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1em 0; }
+      .single-post div .single-col div div ul li a {
+        text-transform: uppercase;
+        color: #ff8d6a;
+        font-weight: bold; }
+    .single-post div .single-col div h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 1em; }
+    .single-post div .single-col div div {
+      padding: 0 5em; }
+      .single-post div .single-col div div img {
+        width: 520px;
+        height: 320px;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .single-post div .single-col div .content-single h3 {
+      text-transform: inherit; }
+    .single-post div .single-col div .newsletter {
+      margin: 1.5em 0;
+      border-bottom: 1px solid lightgrey; }
+      .single-post div .single-col div .newsletter h4 {
+        font-weight: bold; }
+      .single-post div .single-col div .newsletter form {
+        margin-bottom: 1.5em; }
+        .single-post div .single-col div .newsletter form input {
+          padding: 0.5em 1em; }
+        .single-post div .single-col div .newsletter form input:nth-child(2) {
+          border: none;
+          background-color: #ff8d6a;
+          color: white; }
+    .single-post div .single-col div .previous-next {
+      padding-bottom: 1.5em;
+      border-bottom: 1px solid lightgrey; }
+      .single-post div .single-col div .previous-next a {
+        color: black; }
+        .single-post div .single-col div .previous-next a:hover {
+          color: #ff8d6a;
+          text-decoration: none; }
+    .single-post div .single-col div .pub {
+      margin: 3em 0 1.5em 0; }
+      .single-post div .single-col div .pub div {
+        padding: 0; }
+        .single-post div .single-col div .pub div .circle {
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background-color: #ff8d6a;
+          color: white;
+          text-transform: uppercase; }
+    .single-post div .single-col div .might-like {
+      padding: 0; }
+      .single-post div .single-col div .might-like h2 {
+        font-size: 1em;
+        font-weight: bold; }
+        .single-post div .single-col div .might-like h2:after {
+          content: '';
+          position: absolute;
+          border-bottom: 2px solid lightgrey;
+          width: 100%;
+          top: 50%;
+          margin-left: 15px; }
+    .single-post div .single-col div .might-like-content {
+      padding: 0 0 2em 0;
+      border-bottom: 1px solid lightgrey; }
+      .single-post div .single-col div .might-like-content div {
+        padding: 0; }
+        .single-post div .single-col div .might-like-content div div {
+          padding: 0; }
+          .single-post div .single-col div .might-like-content div div img {
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 180px;
+            height: 160px; }
+          .single-post div .single-col div .might-like-content div div a h3 {
+            font-size: 1em;
+            margin-top: 1em; }
+    .single-post div .single-col div .comment-zone {
+      padding: 0;
+      margin-top: 1.5em; }
+      .single-post div .single-col div .comment-zone div {
+        padding: 0; }
 
 .page-header div {
   margin: 2em 0;

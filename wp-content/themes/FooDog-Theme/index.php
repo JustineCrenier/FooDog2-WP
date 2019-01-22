@@ -12,13 +12,13 @@
 				$query = new WP_Query( $args );
 			?>
 			<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-				<div class="col-6 hero-one d-flex justify-content-center flex-column align-items-center">
+				<div class="col-lg-6 col-md-12 hero-one d-flex justify-content-center flex-column align-items-center">
 					<?php the_post_thumbnail('Hero-one'); ?>
 					<h4 class="d-flex"><?php the_category(); ?></h4>
 					<a href="<?php the_permalink(); ?>"class="link-title"><h3><?php the_title(); ?></h3></a>
 				</div>	
 			<?php endwhile; endif; ?>
-			<div class="col-6 hero-post">
+			<div class="col-lg-6 col-md-12 hero-post">
 				<div class="row">
 					<!-- hero -->
 					<?php
@@ -41,11 +41,11 @@
 	<!-- Featured and latest container -->
 	<div class="container">
 		<div class="row">
-			<div class="col-8 wrapper-content">
+			<div class="col-lg-8 wrapper-content">
 				<!-- Featured post -->
 				<div class="container featured-post">
-					<div class="row">
-						<h2 class="col-12 accueil">
+					<div class="row hero-content">
+						<h2 class="col-lg-12 accueil">
 							Featured Post
 						</h2>
 					</div>
@@ -58,16 +58,18 @@
 							$query = new WP_Query( $args );
 						?>
 						<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-							<div class="col-12">
+							<div class="col-lg-12">
 								<div class="row">
-									<div class="col-6">
+									<div class="col-lg-6 col-md-12">
 										<?php the_post_thumbnail('single-post'); ?>
 									</div>
-									<div class="col-6">
+									<div class="col-lg-6 col-md-12">
 										<h4 class="d-flex">Featured <?php the_category(); ?> <span>|</span></h4>
 										<a href="<?php the_permalink(); ?>" class="link-title"><h3><?php the_title(); ?></h3></a>
 										<p><?php the_excerpt(); ?></p>
-										<button class="i-share" data-toggle="modal" data-target="#sharePost"><i class="fas fa-share"></i></button>
+										<div class="row d-flex align-items-center btnShare">
+											<button class="i-share" data-toggle="modal" data-target="#sharePost"><i class="fas fa-share"></i></button><p class="share">Share</p>
+										</div>
 										<div class="modal fade" id="sharePost" tabindex="-1" role="dialog" aria-labelledby="sharePost" aria-hidden="true">
 										  <div class="modal-dialog" role="document">
 										    <div class="modal-content">
@@ -115,7 +117,7 @@
 									$query = new WP_Query( $args );
 								?>
 								<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-									<div class="col-6">
+									<div class="col-lg-6">
 										<?php the_post_thumbnail('single-post'); ?>
 										<h4 class="d-flex justify-content-center"><?php the_category(); ?></h4>
 										<a href="<?php the_permalink(); ?>" class="link-title"><h3 class="text-center"><?php the_title(); ?></h3></a>
@@ -136,7 +138,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-12">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
