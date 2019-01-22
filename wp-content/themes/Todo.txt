@@ -1,4 +1,0 @@
-FOOTER
-	Instagram
-SINGLE
-	widget sidebar

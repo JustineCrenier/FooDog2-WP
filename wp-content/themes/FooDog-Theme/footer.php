@@ -22,10 +22,14 @@
 								<div class="col-12">
 									<div class="row">
 										<div class="col-4">
-											<?php the_post_thumbnail('footer-post'); ?>
+											<a href="<?php the_permalink(); ?>">
+												<?php the_post_thumbnail('footer-post'); ?>
+											</a>
 										</div>
 										<div class="col-8">
-											<h3><?php the_title(); ?></h3>
+											<a href="<?php the_permalink(); ?>">
+												<h3><?php the_title(); ?></h3>
+											</a>
 										</div>
 									</div>
 								</div>	
